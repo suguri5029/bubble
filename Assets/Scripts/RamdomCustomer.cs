@@ -43,7 +43,6 @@ public class RandomCustomer : MonoBehaviour
         // 计算目标范围
         float lowerBound = randomPercentage - 5f;
         float upperBound = randomPercentage + 5f;
-        print(rate);
         // 检查输入是否在范围内
         if (rate >= lowerBound && rate <= upperBound)
         {

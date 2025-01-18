@@ -35,5 +35,8 @@ public class Foam : MonoBehaviour
             sp.color = Color.white; // 离开碰撞时恢复为白色
         }
     }
-
+    public void OnDestroy()
+    {
+        FoamController.instance.spill++;
+    }
 }

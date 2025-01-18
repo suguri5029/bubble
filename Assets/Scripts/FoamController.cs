@@ -5,15 +5,18 @@ using TMPro;
 
 public class FoamController : MonoBehaviour
 {
-    public Vector2 detectionCenter = Vector2.zero; // 检测范围中心点
-    public float detectionRadius = 5f;            // 检测范围半径
-    public Color gizmoColor = Color.cyan;         // Gizmo 的颜色
-    public TMP_Text text;
-    public Pouring pour;
     public static FoamController instance;
-    public bool countDown;
-    private float timeSinceFull = 0f; // 距离上次停止倒酒的时间
     public RandomCustomer rc;
+    public Pouring pour;
+    public Color gizmoColor = Color.cyan;         // Gizmo 的颜色
+    public Vector2 detectionCenter = Vector2.zero; // 检测范围中心点
+    public TMP_Text text;
+    public TMP_Text spillText;
+    public float detectionRadius = 5f;            // 检测范围半径
+    private float timeSinceFull = 0f;
+    public bool countDown;     
+    public int spill;//溢出数量 
+    
 
     public void Awake()
     {
@@ -61,7 +64,12 @@ public class FoamController : MonoBehaviour
     private void Update()
     {
         PrintFoamRatio();
-        // 如果 isPouring 为 false，记录时间
+        spillText.text = spill.ToString();
+        if (spill > 15)
+        {
+            rc.feedbackText.text = "溢出太多了";
+            return;
+        }
         if (countDown)
         {
             timeSinceFull += Time.deltaTime;

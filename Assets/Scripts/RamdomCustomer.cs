@@ -29,7 +29,6 @@ public class RandomCustomer : MonoBehaviour
         // 从列表中随机选择一个顾客
         string randomCustomer = animalCustomers[Random.Range(0, animalCustomers.Count)];
 
-        // 随机生成一个比例（0% - 70%）
         randomPercentage = Random.Range(0f, 60f);
 
         // 将结果显示在 tmpText 上
@@ -42,12 +41,13 @@ public class RandomCustomer : MonoBehaviour
     public void CheckRate(float rate)
     {
         // 计算目标范围
-        float lowerBound = randomPercentage - 3f;
-        float upperBound = randomPercentage + 3f;
-
+        float lowerBound = randomPercentage - 5f;
+        float upperBound = randomPercentage + 5f;
+        print(rate);
         // 检查输入是否在范围内
         if (rate >= lowerBound && rate <= upperBound)
         {
+            
             feedbackText.text = "好样的!";
         }
         else

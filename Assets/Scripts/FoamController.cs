@@ -67,7 +67,7 @@ public class FoamController : MonoBehaviour
             timeSinceFull += Time.deltaTime;
             if (timeSinceFull > 5f)
             {
-                rc.CheckRate(GetFoamRatio());
+                rc.CheckRate(GetFoamRatio() * 100f);
                 timeSinceFull = 0f; // ∑¿÷π÷ÿ∏¥¥•∑¢
             }
         }

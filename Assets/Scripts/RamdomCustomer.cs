@@ -5,6 +5,8 @@ using TMPro;
 
 public class RandomCustomer : MonoBehaviour
 {
+    [SerializeField] TutorialHints hints;
+
     public List<string> animalCustomers; // 动物顾客的列表
     public TextMeshProUGUI tmpText; // TextMeshPro 用于显示文本
     public TextMeshProUGUI feedbackText; // 用于显示反馈信息的文本
@@ -53,5 +55,9 @@ public class RandomCustomer : MonoBehaviour
         {
             feedbackText.text = "再试一次!";
         }
+
+
+        Pouring.allowedToPour = false;
+        hints.displayNextHint();
     }
 }

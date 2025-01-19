@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b35e70643df4a4daf1e8f488bf3b7da, type: 3}
+  m_Name: Library
+  m_EditorClassIdentifier: 
+  library:
+    list:
+    - key: background-4d2cfb92-2b04-4a40-832d-518f49d0f41d
+      value:
+        key: background
+        id: background-4d2cfb92-2b04-4a40-832d-518f49d0f41d
+        defaultKey: background-4d2cfb92-2b04-4a40-832d-518f49d0f41d
+        value: {fileID: 8300000, guid: e859643bf0defcf4ba6de70e70bdde60, type: 3}
+        path: Assets/Audios/background.wav
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: button_click-5ef9be13-cf00-4e38-9c5b-9a2ad6288244
+      value:
+        key: button_click
+        id: button_click-5ef9be13-cf00-4e38-9c5b-9a2ad6288244
+        defaultKey: button_click-5ef9be13-cf00-4e38-9c5b-9a2ad6288244
+        value: {fileID: 8300000, guid: 0c2645c4feab79949b206b7ce98cec93, type: 3}
+        path: Assets/Audios/button_click.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: game_clear-024a0ffe-fb8b-418a-a2dd-576ab708425c
+      value:
+        key: game_clear
+        id: game_clear-024a0ffe-fb8b-418a-a2dd-576ab708425c
+        defaultKey: game_clear-024a0ffe-fb8b-418a-a2dd-576ab708425c
+        value: {fileID: 8300000, guid: 9d94879e6c627dc4a9b7a4ff1a1556d4, type: 3}
+        path: Assets/Audios/game_clear.mp3
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+    - key: pouring-4e35be53-b079-4152-b2c2-e705f9a166df
+      value:
+        key: pouring
+        id: pouring-4e35be53-b079-4152-b2c2-e705f9a166df
+        defaultKey: pouring-4e35be53-b079-4152-b2c2-e705f9a166df
+        value: {fileID: 8300000, guid: 78da735e7452ca24c80a2ce171fd7396, type: 3}
+        path: Assets/Audios/pouring.wav
+        dynamicStartTime:
+          time: 0
+          threshold: 0
+          option: 1
+          tabPos: 1
+        showDynamicTime: 0
+  libraryReverseLookup:
+    list:
+    - key: background
+      value: background-4d2cfb92-2b04-4a40-832d-518f49d0f41d
+    - key: button_click
+      value: button_click-5ef9be13-cf00-4e38-9c5b-9a2ad6288244
+    - key: game_clear
+      value: game_clear-024a0ffe-fb8b-418a-a2dd-576ab708425c
+    - key: pouring
+      value: pouring-4e35be53-b079-4152-b2c2-e705f9a166df
+  groups:
+    list: []
+  groupsReverseLookup:
+    list: []
+  mixers:
+    list: []
+  mixersReverseLookup:
+    list: []
+  tracks:
+    list: []
+  tracksReverseLookup:
+    list: []

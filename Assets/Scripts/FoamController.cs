@@ -69,6 +69,7 @@ public class FoamController : MonoBehaviour
             {
                 rc.CheckRate(GetFoamRatio() * 100f);
                 timeSinceFull = 0f; // ∑¿÷π÷ÿ∏¥¥•∑¢
+                Pouring.allowedToPour = false;
             }
         }
     }
